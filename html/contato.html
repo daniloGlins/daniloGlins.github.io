@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos Externos -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Título da Página -->
+    <title>JEF_Construções</title>
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <button class="navbar-toggler" type="button" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a class="navbar-brand" href="#"><img class="img" src="../img/logo.ico" alt=""></a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../home.html">INICIO</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../html/sobre_nos.html">SOBRE NÓS</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/obras.html">OBRAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">PARCEIROS</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/contato.html"
+                        style="border-bottom: 2px solid;">CONTATO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">SAC</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Barra Lateral -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-symbols-outlined">
+                <i class="fa-solid fa-x"></i>
+            </span></a>
+        <a href="#">Inicio</a>
+        <a href="#">Empresa</a>
+        <a href="#">Serviços</a>
+        <a href="#">Novidades</a>
+        <a href="#">Contatos</a>
+        <a href="#">SAC</a>
+    </div>
+
+    <!--Titulo da página-->
+    <div class="Text_principal">
+        <h1 id="Text_obras" class="animated-text">CONTATOS</h1>
+        <p id="Text_map" class="animated-text">INÍCIO > CONTATO</p>
+    </div>
+    <!--icone de balão-->
+    <div class="balao" style="display: flex; justify-content: flex-start; align-items: center; padding-left: 30%;">
+        <img src="../img/bate-papo.png" alt="" style="width: 90px;">
+        <div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 10px;">
+            <p style="margin-bottom: 5px;">Ligue-nos</p>
+            <h5>(81) 3338 3604</h5>
+        </div>
+    </div>
+    <!--inputs-->
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Seu nome"
+                style="margin: 10px; padding: 10px; border: none; border-radius: 5px; box-shadow: 0 0 5px 4px rgba(0,0,0,0.06);">
+        </div>
+        <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Seu email"
+                style="margin: 10px; padding: 10px; border: none; border-radius: 5px; box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);">
+        </div>
+        <div class="col-12">
+            <input type="text" class="form-control" placeholder="Assunto"
+                style="margin: 10px; padding: 10px; border: none; border-radius: 5px; box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);">
+        </div>
+    </div>
+    <!--input para texto grande-->
+    <div class="row">
+        <div class="col-12">
+            <textarea class="form-control" placeholder="Escreva sua mensagem aqui..."
+                style="margin: 10px; padding: 10px; border: none; border-radius: 5px; box-shadow: 0 0 15px 4px rgba(0,0,0,0.06); height: 300px;"></textarea>
+        </div>
+    </div>
+    <!--Mapa e texto-->
+    <!--Mapa e texto-->
+    <div style="background-color: #f0f0f0; text-align: center;">
+        <div>
+            <h5>Aonde estamos</h5>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <h3>Av Recife, 2739 - Ipsep Recife/PE| CEP: 51.190-73</h3>
+        </div>
+        <br>
+    </div>
+    <!--maps-->
+    
+   <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.2936704507879!2d-34.926763146855244!3d-8.111628368237335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e5e65de1855%3A0x7dd01c916c51e1bf!2sAv.%20Recife%2C%202739%20-%20Santo%20Amaro%2C%20Recife%20-%20PE%2C%2050910-380!5e0!3m2!1spt-BR!2sbr!4v1704474235570!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+   </div>
+
+              <!--Inicia Footer-->
+              <div id="footer">
+                <div class="container">
+                    <div class="col-md-4">
+                        <img src="img/logo.png" style="height: 100px; margin-left: -20px;" alt="Logo" id="logo">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Sobre Nós</h3>
+                        <p>A Cosampa vem conquistando espaço no mercado brasileiro, através da prestação de serviços</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Sede</h3>
+                        <p>Rua Manuel de Aguiar Pontes, 1354<br>
+                            Boa Vista – Fortaleza/CE<br>
+                            (85) 3289-2363
+                        </p>
+                    </div>
+                    <!-- New column for "Entre em Contato" -->
+                    <div class="col-md-4">
+                        <h3>Entre em Contato</h3>
+                        <div class="contact-icons">
+                            <div class="icon-container">
+                                <div class="icon-square"><i class="fab fa-whatsapp"></i></div>
+                            </div>
+                            <div class="icon-container">
+                                <div class="icon-square"><i class="far fa-envelope"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="copy">© JEF_Construções Todos os Direitos reservados. <a href="#">Política de Privacidade</a></p>
+            </div>
+                    <style>
+                        .icon-container {
+                            display: inline-block;
+                            margin-right: 10px;
+                            position: relative;
+                        }
+                
+                        .icon-square {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+        
+                            border-radius: 5px; /* Borda arredondada, ajuste conforme necessário */
+                            transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out;
+                            background-image: linear-gradient(to bottom, #3498db 50%, red 50%);
+                            background-size: 100% 200%;
+                            background-position: 0 0;
+                        }
+                
+                        .icon-square i {
+                            font-size: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+                        }
+                
+                        .icon-container:hover .icon-square {
+                            transform: scale(1.2);
+                            background-position: 0 100%;
+                        }
+                    </style>
+                    <!--Termina Footer-->
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+/* Estilo do Corpo da Página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilo da Barra de Navegação */
+
+
+
+
+/* Estilo do Conteúdo Principal */
+.content {
+    transition: margin-left 0.3s;
+    flex: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* Adicionado para centralizar o conteúdo principal */
+    max-width: 1800px;
+    /* Definindo a largura máxima do conteúdo principal */
+
+}
+
+
+
+/* Estilo dos Cards */
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo da Imagem */
+
+
+/* Estilo da Seção de Apresentação */
+.apresentacao {
+    text-align: justify;
+    background-color: #3498db;
+    color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historia {
+    text-align: center;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilo do Título de Serviços */
+.service {
+    color: #333;
+    background-color: #ecf0f1;
+    padding: 30px;
+    margin-top: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.service h2 {
+    font-size: 28px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+    /* Adicionado para que a borda fique apenas abaixo do texto */
+}
+
+/* Estilo da Descrição */
+.explicacao {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Animação nos Cards */
+.card {
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do Rodapé */
+
+
+/* Estilo da Linha Divisória no Rodapé */
+.hr-divider {
+    border: 0;
+    height: 1px;
+    background-color: #574f49;
+    margin: 20px 0;
+}
+
+/* Estilo dos Links no Rodapé (Lista) */
+.footer-links {
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #dcdcdc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
+
+/* Estilo do Texto no Rodapé */
+.footer-text {
+    transition: color 0.3s ease;
+}
+
+.footer-text:hover {
+    color: #ffc107;
+}
+
+/* Estilo do Texto de Direitos Autorais no Rodapé */
+.footer-copyright {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/*Animação do titulo*/
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.animated-text {
+    animation: fadeIn 3s; /*Tempo da animação*/
+}
+
+.Text_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #f3f3f3;
+    
+}
+#Text_obras {
+color: #444444;
+margin-top: 20px;
+}
+#Text_map {
+    margin-top: -5px;
+    color: #626262;
+}
+/*Cards*/
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    flex: 0 0 30%;
+    margin: 1.5%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(100%);
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+}
+
+.card-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+

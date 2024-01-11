@@ -1,0 +1,51 @@
+:root {
+    --cor-principal-azul: #000080;
+    --cor-navbar: #a4d7f1;
+    --cor-body: rgba(113, 101, 101, 0.364);
+    --cor-container: white;
+}
+
+#navbar {
+    background-color: var(--cor-principal-azul) !important;
+    width: 100%;
+    z-index: 2;
+
+}
+.img {
+    height: 50px;
+
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-navbar);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

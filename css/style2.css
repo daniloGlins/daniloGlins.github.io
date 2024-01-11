@@ -1,0 +1,188 @@
+:root {
+    --cor-principal-azul: #0b0b9f;
+    --cor-navbar: #a4d7f1;
+    --cor-body: rgba(113, 101, 101, 0.364);
+    --cor-container: white;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+.img{
+    height: 50px;
+}
+
+#navbar {
+    background-color: var(--cor-principal-azul) !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+/* Estilo da Barra Lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-navbar);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Carrossel */
+#carouselExampleIndicators {
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    max-height: 100%;
+}
+
+#carouselExampleIndicators .carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo do Rodapé */
+.footer {
+    background-color: var(--cor-principal-azul);
+    color: #ffffff;
+    padding: 50px 0;
+    margin-top: 10%;
+}
+
+
+
+/* Estilo da Imagem do Rodapé */
+#img-footer {
+    height: 160px;
+
+}
+
+/* Estilo do Logo no Rodapé */
+.footer img.footer-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer img.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo das Seções no Rodapé */
+.footer-section {
+    margin-bottom: 20px;
+}
+
+/* Estilo dos Links no Rodapé */
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffc107;
+}
+
+/* Estilo das Redes Sociais no Rodapé */
+.footer-social {
+    text-align: center;
+}
+
+.footer-social i {
+    font-size: 30px;
+    margin: 0 15px;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social i:hover {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+/* Estilo da Linha Divisória no Rodapé */
+.hr-divider {
+    border: 0;
+    height: 1px;
+    background-color: #574f49;
+    margin: 20px 0;
+}
+
+/* Estilo dos Links no Rodapé (Lista) */
+.footer-links {
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #dcdcdc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
+
+/* Estilo do Texto no Rodapé */
+.footer-text {
+    transition: color 0.3s ease;
+}
+
+.footer-text:hover {
+    color: #ffc107;
+}
+
+/* Estilo do Texto de Direitos Autorais no Rodapé */
+.footer-copyright {
+    font-size: 14px;
+    color: #6c757d;
+}

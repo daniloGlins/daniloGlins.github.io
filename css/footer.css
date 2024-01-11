@@ -1,0 +1,100 @@
+#footer {
+    background-color: #691717;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#footer h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: -35px;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    /* Largura do botão quadrado */
+    height: 40px;
+    /* Altura do botão quadrado */
+    border-radius: 5px;
+    /* Borda arredondada */
+    text-align: center;
+    line-height: 40px;
+    /* Centralizar o ícone verticalmente */
+    background: linear-gradient(to top, #310485 50%, #030303 50%);
+    /* Efeito de transição vertical */
+    background-size: 100% 200%;
+    /* Tamanho da transição vertical */
+    transition: background-position 0.3s ease;
+
+
+}
+
+.social-icons a:hover {
+    background-position: 0% 100%;
+    /* Altera a posição do fundo ao passar o mouse */
+}
+
+.social-icons i {
+    font-size: 20px;
+    position: relative;
+
+
+    /* Tamanho do ícone */
+}
+
+.copy {
+    font-size: 12px;
+}
+
+.copy a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Adicionando centralização aos textos internos */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Ajustes nas colunas internas */
+.col-md-4 {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 15px;
+    text-align: left;
+}
+
+/* Adicionando mais itens ao layout do footer */
+.additional-items {
+    margin-top: 20px;
+}
+
+.additional-items p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

@@ -1,0 +1,102 @@
+.trabalhe-conosco {
+    background-color:#0a2a47;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /* Alterado para row para telas maiores */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}   
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+h4 {
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+}
+.click-me-button {
+    background: rgb(0, 168, 70);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-position: -100% 0; /* Inicializa com preenchimento à esquerda */
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.click-me-button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Certifique-se de que o conteúdo do botão fique na frente do pseudo-elemento ::after */
+}
+
+.click-me-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 0, 0); /* Altere o valor para a cor desejada */
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+    border-radius: 10px;
+    z-index: -1; /* Garante que o efeito fique atrás do conteúdo do botão */
+}
+
+.click-me-button:hover::after {
+    right: 0;
+    opacity: 1;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .trabalhe-conosco {
+        flex-direction: column;
+        /* Alterado para column para telas menores */
+        align-items: center;
+    }
+
+    .profile-picture {
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Adicionado espaçamento abaixo da imagem em telas menores */
+    }
+
+    h4 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
